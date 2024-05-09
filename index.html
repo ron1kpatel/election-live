@@ -57,11 +57,15 @@
     </div>
 
     <script>
-        function increaseScore(team) {
+        function increaseScore(team) {XMLDocument
             var scoreElement = document.getElementById(team + '-score');
             var currentScore = parseInt(scoreElement.textContent);
+            if(team == 'congress') {
+                alert("Bad choice, Amit shah is on the way to murder you. run!")
+            }
             scoreElement.textContent = currentScore + 1;
         }
     </script>
+
 </body>
 </html>
